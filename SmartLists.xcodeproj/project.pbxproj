@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C110D71A28A1CD830060778C /* SmartListsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D71928A1CD830060778C /* SmartListsApp.swift */; };
+		C110D71C28A1CD830060778C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D71B28A1CD830060778C /* ContentView.swift */; };
+		C110D71E28A1CD840060778C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C110D71D28A1CD840060778C /* Assets.xcassets */; };
+		C110D72128A1CD840060778C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C110D72028A1CD840060778C /* Preview Assets.xcassets */; };
+		C110D72328A1CD840060778C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D72228A1CD840060778C /* Persistence.swift */; };
+		C110D72628A1CD840060778C /* SmartLists.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C110D72428A1CD840060778C /* SmartLists.xcdatamodeld */; };
+		C110D73128A1CD840060778C /* SmartListsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D73028A1CD840060778C /* SmartListsTests.swift */; };
+		C110D73B28A1CD840060778C /* SmartListsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D73A28A1CD840060778C /* SmartListsUITests.swift */; };
+		C110D73D28A1CD840060778C /* SmartListsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D73C28A1CD840060778C /* SmartListsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C110D72D28A1CD840060778C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C110D70E28A1CD830060778C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C110D71528A1CD830060778C;
+			remoteInfo = SmartLists;
+		};
+		C110D73728A1CD840060778C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C110D70E28A1CD830060778C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C110D71528A1CD830060778C;
+			remoteInfo = SmartLists;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C110D71628A1CD830060778C /* SmartLists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartLists.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C110D71928A1CD830060778C /* SmartListsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartListsApp.swift; sourceTree = "<group>"; };
+		C110D71B28A1CD830060778C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C110D71D28A1CD840060778C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C110D72028A1CD840060778C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C110D72228A1CD840060778C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		C110D72528A1CD840060778C /* SmartLists.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartLists.xcdatamodel; sourceTree = "<group>"; };
+		C110D72728A1CD840060778C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C110D72C28A1CD840060778C /* SmartListsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartListsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C110D73028A1CD840060778C /* SmartListsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartListsTests.swift; sourceTree = "<group>"; };
+		C110D73628A1CD840060778C /* SmartListsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartListsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C110D73A28A1CD840060778C /* SmartListsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartListsUITests.swift; sourceTree = "<group>"; };
+		C110D73C28A1CD840060778C /* SmartListsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartListsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C110D71328A1CD830060778C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C110D72928A1CD840060778C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C110D73328A1CD840060778C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C110D70D28A1CD830060778C = {
+			isa = PBXGroup;
+			children = (
+				C110D71828A1CD830060778C /* SmartLists */,
+				C110D72F28A1CD840060778C /* SmartListsTests */,
+				C110D73928A1CD840060778C /* SmartListsUITests */,
+				C110D71728A1CD830060778C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C110D71728A1CD830060778C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C110D71628A1CD830060778C /* SmartLists.app */,
+				C110D72C28A1CD840060778C /* SmartListsTests.xctest */,
+				C110D73628A1CD840060778C /* SmartListsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C110D71828A1CD830060778C /* SmartLists */ = {
+			isa = PBXGroup;
+			children = (
+				C110D71928A1CD830060778C /* SmartListsApp.swift */,
+				C110D71B28A1CD830060778C /* ContentView.swift */,
+				C110D71D28A1CD840060778C /* Assets.xcassets */,
+				C110D72228A1CD840060778C /* Persistence.swift */,
+				C110D72728A1CD840060778C /* Info.plist */,
+				C110D72428A1CD840060778C /* SmartLists.xcdatamodeld */,
+				C110D71F28A1CD840060778C /* Preview Content */,
+			);
+			path = SmartLists;
+			sourceTree = "<group>";
+		};
+		C110D71F28A1CD840060778C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C110D72028A1CD840060778C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C110D72F28A1CD840060778C /* SmartListsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C110D73028A1CD840060778C /* SmartListsTests.swift */,
+			);
+			path = SmartListsTests;
+			sourceTree = "<group>";
+		};
+		C110D73928A1CD840060778C /* SmartListsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C110D73A28A1CD840060778C /* SmartListsUITests.swift */,
+				C110D73C28A1CD840060778C /* SmartListsUITestsLaunchTests.swift */,
+			);
+			path = SmartListsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C110D71528A1CD830060778C /* SmartLists */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C110D74028A1CD840060778C /* Build configuration list for PBXNativeTarget "SmartLists" */;
+			buildPhases = (
+				C110D71228A1CD830060778C /* Sources */,
+				C110D71328A1CD830060778C /* Frameworks */,
+				C110D71428A1CD830060778C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartLists;
+			productName = SmartLists;
+			productReference = C110D71628A1CD830060778C /* SmartLists.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C110D72B28A1CD840060778C /* SmartListsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C110D74328A1CD840060778C /* Build configuration list for PBXNativeTarget "SmartListsTests" */;
+			buildPhases = (
+				C110D72828A1CD840060778C /* Sources */,
+				C110D72928A1CD840060778C /* Frameworks */,
+				C110D72A28A1CD840060778C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C110D72E28A1CD840060778C /* PBXTargetDependency */,
+			);
+			name = SmartListsTests;
+			productName = SmartListsTests;
+			productReference = C110D72C28A1CD840060778C /* SmartListsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C110D73528A1CD840060778C /* SmartListsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C110D74628A1CD840060778C /* Build configuration list for PBXNativeTarget "SmartListsUITests" */;
+			buildPhases = (
+				C110D73228A1CD840060778C /* Sources */,
+				C110D73328A1CD840060778C /* Frameworks */,
+				C110D73428A1CD840060778C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C110D73828A1CD840060778C /* PBXTargetDependency */,
+			);
+			name = SmartListsUITests;
+			productName = SmartListsUITests;
+			productReference = C110D73628A1CD840060778C /* SmartListsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C110D70E28A1CD830060778C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					C110D71528A1CD830060778C = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					C110D72B28A1CD840060778C = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = C110D71528A1CD830060778C;
+					};
+					C110D73528A1CD840060778C = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = C110D71528A1CD830060778C;
+					};
+				};
+			};
+			buildConfigurationList = C110D71128A1CD830060778C /* Build configuration list for PBXProject "SmartLists" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C110D70D28A1CD830060778C;
+			productRefGroup = C110D71728A1CD830060778C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C110D71528A1CD830060778C /* SmartLists */,
+				C110D72B28A1CD840060778C /* SmartListsTests */,
+				C110D73528A1CD840060778C /* SmartListsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C110D71428A1CD830060778C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C110D72128A1CD840060778C /* Preview Assets.xcassets in Resources */,
+				C110D71E28A1CD840060778C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C110D72A28A1CD840060778C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C110D73428A1CD840060778C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C110D71228A1CD830060778C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C110D72328A1CD840060778C /* Persistence.swift in Sources */,
+				C110D72628A1CD840060778C /* SmartLists.xcdatamodeld in Sources */,
+				C110D71C28A1CD830060778C /* ContentView.swift in Sources */,
+				C110D71A28A1CD830060778C /* SmartListsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C110D72828A1CD840060778C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C110D73128A1CD840060778C /* SmartListsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C110D73228A1CD840060778C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C110D73D28A1CD840060778C /* SmartListsUITestsLaunchTests.swift in Sources */,
+				C110D73B28A1CD840060778C /* SmartListsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C110D72E28A1CD840060778C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C110D71528A1CD830060778C /* SmartLists */;
+			targetProxy = C110D72D28A1CD840060778C /* PBXContainerItemProxy */;
+		};
+		C110D73828A1CD840060778C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C110D71528A1CD830060778C /* SmartLists */;
+			targetProxy = C110D73728A1CD840060778C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C110D73E28A1CD840060778C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C110D73F28A1CD840060778C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C110D74128A1CD840060778C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartLists/Preview Content\"";
+				DEVELOPMENT_TEAM = 9QH8M89WF9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiofiorita.SmartLists;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C110D74228A1CD840060778C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartLists/Preview Content\"";
+				DEVELOPMENT_TEAM = 9QH8M89WF9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiofiorita.SmartLists;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C110D74428A1CD840060778C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QH8M89WF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiofiorita.SmartListsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartLists.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartLists";
+			};
+			name = Debug;
+		};
+		C110D74528A1CD840060778C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QH8M89WF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiofiorita.SmartListsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartLists.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartLists";
+			};
+			name = Release;
+		};
+		C110D74728A1CD840060778C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QH8M89WF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiofiorita.SmartListsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartLists;
+			};
+			name = Debug;
+		};
+		C110D74828A1CD840060778C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QH8M89WF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiofiorita.SmartListsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartLists;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C110D71128A1CD830060778C /* Build configuration list for PBXProject "SmartLists" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C110D73E28A1CD840060778C /* Debug */,
+				C110D73F28A1CD840060778C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C110D74028A1CD840060778C /* Build configuration list for PBXNativeTarget "SmartLists" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C110D74128A1CD840060778C /* Debug */,
+				C110D74228A1CD840060778C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C110D74328A1CD840060778C /* Build configuration list for PBXNativeTarget "SmartListsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C110D74428A1CD840060778C /* Debug */,
+				C110D74528A1CD840060778C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C110D74628A1CD840060778C /* Build configuration list for PBXNativeTarget "SmartListsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C110D74728A1CD840060778C /* Debug */,
+				C110D74828A1CD840060778C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C110D72428A1CD840060778C /* SmartLists.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C110D72528A1CD840060778C /* SmartLists.xcdatamodel */,
+			);
+			currentVersion = C110D72528A1CD840060778C /* SmartLists.xcdatamodel */;
+			path = SmartLists.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C110D70E28A1CD830060778C /* Project object */;
+}
