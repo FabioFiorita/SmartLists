@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C110D71A28A1CD830060778C /* SmartListsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D71928A1CD830060778C /* SmartListsApp.swift */; };
-		C110D71C28A1CD830060778C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D71B28A1CD830060778C /* ContentView.swift */; };
 		C110D71E28A1CD840060778C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C110D71D28A1CD840060778C /* Assets.xcassets */; };
 		C110D72128A1CD840060778C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C110D72028A1CD840060778C /* Preview Assets.xcassets */; };
 		C110D72328A1CD840060778C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D72228A1CD840060778C /* Persistence.swift */; };
@@ -16,6 +15,7 @@
 		C110D73128A1CD840060778C /* SmartListsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D73028A1CD840060778C /* SmartListsTests.swift */; };
 		C110D73B28A1CD840060778C /* SmartListsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D73A28A1CD840060778C /* SmartListsUITests.swift */; };
 		C110D73D28A1CD840060778C /* SmartListsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D73C28A1CD840060778C /* SmartListsUITestsLaunchTests.swift */; };
+		C110D74A28A1CE3B0060778C /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D74928A1CE3B0060778C /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		C110D71628A1CD830060778C /* SmartLists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartLists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C110D71928A1CD830060778C /* SmartListsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartListsApp.swift; sourceTree = "<group>"; };
-		C110D71B28A1CD830060778C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C110D71D28A1CD840060778C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C110D72028A1CD840060778C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C110D72228A1CD840060778C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		C110D73628A1CD840060778C /* SmartListsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartListsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C110D73A28A1CD840060778C /* SmartListsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartListsUITests.swift; sourceTree = "<group>"; };
 		C110D73C28A1CD840060778C /* SmartListsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartListsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C110D74928A1CE3B0060778C /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				C110D71928A1CD830060778C /* SmartListsApp.swift */,
-				C110D71B28A1CD830060778C /* ContentView.swift */,
+				C110D74928A1CE3B0060778C /* ListView.swift */,
 				C110D71D28A1CD840060778C /* Assets.xcassets */,
 				C110D72228A1CD840060778C /* Persistence.swift */,
 				C110D72728A1CD840060778C /* Info.plist */,
@@ -267,7 +267,7 @@
 			files = (
 				C110D72328A1CD840060778C /* Persistence.swift in Sources */,
 				C110D72628A1CD840060778C /* SmartLists.xcdatamodeld in Sources */,
-				C110D71C28A1CD830060778C /* ContentView.swift in Sources */,
+				C110D74A28A1CE3B0060778C /* ListView.swift in Sources */,
 				C110D71A28A1CD830060778C /* SmartListsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
