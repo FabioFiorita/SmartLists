@@ -10,12 +10,12 @@
 		C110D71A28A1CD830060778C /* SmartListsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D71928A1CD830060778C /* SmartListsApp.swift */; };
 		C110D71E28A1CD840060778C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C110D71D28A1CD840060778C /* Assets.xcassets */; };
 		C110D72128A1CD840060778C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C110D72028A1CD840060778C /* Preview Assets.xcassets */; };
-		C110D72328A1CD840060778C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D72228A1CD840060778C /* Persistence.swift */; };
 		C110D72628A1CD840060778C /* SmartLists.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C110D72428A1CD840060778C /* SmartLists.xcdatamodeld */; };
 		C110D73128A1CD840060778C /* SmartListsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D73028A1CD840060778C /* SmartListsTests.swift */; };
 		C110D73B28A1CD840060778C /* SmartListsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D73A28A1CD840060778C /* SmartListsUITests.swift */; };
 		C110D73D28A1CD840060778C /* SmartListsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D73C28A1CD840060778C /* SmartListsUITestsLaunchTests.swift */; };
 		C110D74A28A1CE3B0060778C /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D74928A1CE3B0060778C /* ListView.swift */; };
+		C110D75028A1D1730060778C /* ObjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D74F28A1D1730060778C /* ObjectViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		C110D71928A1CD830060778C /* SmartListsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartListsApp.swift; sourceTree = "<group>"; };
 		C110D71D28A1CD840060778C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C110D72028A1CD840060778C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C110D72228A1CD840060778C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		C110D72528A1CD840060778C /* SmartLists.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartLists.xcdatamodel; sourceTree = "<group>"; };
 		C110D72728A1CD840060778C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C110D72C28A1CD840060778C /* SmartListsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartListsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +48,8 @@
 		C110D73A28A1CD840060778C /* SmartListsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartListsUITests.swift; sourceTree = "<group>"; };
 		C110D73C28A1CD840060778C /* SmartListsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartListsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C110D74928A1CE3B0060778C /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		C110D74B28A1D08B0060778C /* SmartLists.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartLists.entitlements; sourceTree = "<group>"; };
+		C110D74F28A1D1730060778C /* ObjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +100,12 @@
 		C110D71828A1CD830060778C /* SmartLists */ = {
 			isa = PBXGroup;
 			children = (
+				C110D74E28A1D1530060778C /* Views */,
+				C110D74D28A1D1480060778C /* Models */,
+				C110D74C28A1D1410060778C /* ViewModels */,
+				C110D74B28A1D08B0060778C /* SmartLists.entitlements */,
 				C110D71928A1CD830060778C /* SmartListsApp.swift */,
-				C110D74928A1CE3B0060778C /* ListView.swift */,
 				C110D71D28A1CD840060778C /* Assets.xcassets */,
-				C110D72228A1CD840060778C /* Persistence.swift */,
 				C110D72728A1CD840060778C /* Info.plist */,
 				C110D72428A1CD840060778C /* SmartLists.xcdatamodeld */,
 				C110D71F28A1CD840060778C /* Preview Content */,
@@ -133,6 +136,29 @@
 				C110D73C28A1CD840060778C /* SmartListsUITestsLaunchTests.swift */,
 			);
 			path = SmartListsUITests;
+			sourceTree = "<group>";
+		};
+		C110D74C28A1D1410060778C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C110D74F28A1D1730060778C /* ObjectViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C110D74D28A1D1480060778C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C110D74E28A1D1530060778C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C110D74928A1CE3B0060778C /* ListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C110D72328A1CD840060778C /* Persistence.swift in Sources */,
+				C110D75028A1D1730060778C /* ObjectViewModel.swift in Sources */,
 				C110D72628A1CD840060778C /* SmartLists.xcdatamodeld in Sources */,
 				C110D74A28A1CE3B0060778C /* ListView.swift in Sources */,
 				C110D71A28A1CD830060778C /* SmartListsApp.swift in Sources */,
@@ -424,12 +450,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartLists/SmartLists.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartLists/Preview Content\"";
 				DEVELOPMENT_TEAM = 9QH8M89WF9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartLists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -453,12 +481,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartLists/SmartLists.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartLists/Preview Content\"";
 				DEVELOPMENT_TEAM = 9QH8M89WF9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartLists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
