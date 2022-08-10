@@ -16,19 +16,20 @@ final class ListTypeViewModel: ObservableObject {
         self.viewContext = viewContext
     }
     
-    func fetchLists() {
+    func fetchLists() -> [ListType] {
         let request = NSFetchRequest<ListType>(entityName: "ListType")
         do {
             lists = try viewContext.fetch(request)
+            return lists
         } catch {
             print("Error Fetching. \(error)")
+            return []
         }
     }
     
     func saveData() {
         do {
             try viewContext.save()
-            fetchLists()
         } catch {
             print("Error saving. \(error)")
         }

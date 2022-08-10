@@ -26,7 +26,21 @@ final class TestListTypeViewModel: XCTestCase {
         super.tearDown()
     }
     
+    func testFetchLists() {
+        var lists = listTypeViewModel.fetchLists()
+        XCTAssertTrue(lists.isEmpty)
+        let newList = listTypeViewModel.addList(title: "Title", type: "Stepper List")
+        lists = listTypeViewModel.fetchLists()
+        XCTAssertFalse(lists.isEmpty)
+        XCTAssertTrue(lists.first == newList)
+    }
     
+    func testAddList() {
+        let newList = listTypeViewModel.addList(title: "Title", type: "Stepper List")
+        XCTAssertNotNil(newList, "List should not be nil")
+        XCTAssertEqual("Title", newList.title, "List should have the same title")
+        XCTAssertTrue(newList.type == "Stepper List", "List should have the same list type")
+    }
 
 }
 
