@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-class CoreDataStack {
+final class CoreDataStack: ObservableObject {
     static let shared = CoreDataStack()
 
     let container: NSPersistentCloudKitContainer
@@ -20,8 +20,8 @@ class CoreDataStack {
                 print("ERROR LOADING CORE DATA. \(error)")
             }
         }
-        let options = NSPersistentCloudKitContainerSchemaInitializationOptions()
-        try? container.initializeCloudKitSchema(options: options)
+        //let options = NSPersistentCloudKitContainerSchemaInitializationOptions()
+        //try? container.initializeCloudKitSchema(options: options)
         container.viewContext.automaticallyMergesChangesFromParent = true
         container.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
     }
