@@ -9,10 +9,11 @@ import SwiftUI
 
 @main
 struct SmartListsApp: App {
+    let persistenceController = CoreDataStack.shared
 
     var body: some Scene {
         WindowGroup {
-            StepperListView()
+            ListsView(viewContext: persistenceController.container.viewContext)
         }
     }
 }
