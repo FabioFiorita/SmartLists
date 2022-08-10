@@ -36,6 +36,7 @@ final class StepperItemViewModel: ObservableObject {
     
     func addItem(content: String) -> StepperItem {
         let newItem = StepperItem(context: viewContext)
+        newItem.id = UUID()
         newItem.content = content
         newItem.amount = 0
         saveData()
@@ -43,13 +44,21 @@ final class StepperItemViewModel: ObservableObject {
     }
     
     func increaseAmount(item: StepperItem) -> StepperItem {
-        item.amount = item.amount + 1
+        if item.amount <= 100 {
+            item.amount = item.amount + 1
+        } else {
+            item.amount = 100
+        }
         saveData()
         return item
     }
     
     func decreaseAmount(item: StepperItem) -> StepperItem {
-        item.amount = item.amount - 1
+        if item.amount > 0 {
+            item.amount = item.amount - 1
+        } else {
+            item.amount = 0
+        }
         saveData()
         return item
     }
