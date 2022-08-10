@@ -9,6 +9,7 @@
     <entity name="ListType" representedClassName="ListType" syncable="YES" codeGenerationType="class">
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
         <relationship name="checkboxItems" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CheckboxItem" inverseName="listType" inverseEntity="CheckboxItem"/>
         <relationship name="plainItems" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlainItem" inverseName="listType" inverseEntity="PlainItem"/>
         <relationship name="stepperItems" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StepperItem" inverseName="listType" inverseEntity="StepperItem"/>
@@ -26,7 +27,7 @@
     </entity>
     <elements>
         <element name="CheckboxItem" positionX="-54" positionY="27" width="128" height="89"/>
-        <element name="ListType" positionX="-63" positionY="18" width="128" height="104"/>
+        <element name="ListType" positionX="-63" positionY="18" width="128" height="119"/>
         <element name="PlainItem" positionX="-36" positionY="36" width="128" height="74"/>
         <element name="StepperItem" positionX="-63" positionY="-9" width="128" height="89"/>
     </elements>
