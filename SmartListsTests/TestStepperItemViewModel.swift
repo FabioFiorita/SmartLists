@@ -29,6 +29,15 @@ final class TestStepperItemViewModel: XCTestCase {
         self.stepperItemViewModel = nil
         super.tearDown()
     }
+    
+    func testFetchItems() {
+        let items = stepperItemViewModel.items
+        XCTAssertTrue(items.isEmpty)
+        let newItem = stepperItemViewModel.addItem(content: "Test", listType: listType)
+        stepperItemViewModel.fetchItems(forList: listType)
+        XCTAssertFalse(items.isEmpty)
+        XCTAssertTrue(items.first == newItem)
+    }
 
     func testAddItem() {
         let newItem = stepperItemViewModel.addItem(content: "Test", listType: listType)
