@@ -4,29 +4,29 @@
         <attribute name="content" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="marked" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="List" inverseName="checkboxItems" inverseEntity="List"/>
+        <relationship name="listType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ListType" inverseName="checkboxItems" inverseEntity="ListType"/>
     </entity>
-    <entity name="List" representedClassName="List" syncable="YES" codeGenerationType="class">
+    <entity name="ListType" representedClassName="ListType" syncable="YES" codeGenerationType="class">
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="title" optional="YES" attributeType="String"/>
-        <relationship name="checkboxItems" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CheckboxItem" inverseName="list" inverseEntity="CheckboxItem"/>
-        <relationship name="plainItems" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlainItem" inverseName="list" inverseEntity="PlainItem"/>
-        <relationship name="stepperItems" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StepperItem" inverseName="list" inverseEntity="StepperItem"/>
+        <relationship name="checkboxItems" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CheckboxItem" inverseName="listType" inverseEntity="CheckboxItem"/>
+        <relationship name="plainItems" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlainItem" inverseName="listType" inverseEntity="PlainItem"/>
+        <relationship name="stepperItems" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StepperItem" inverseName="listType" inverseEntity="StepperItem"/>
     </entity>
     <entity name="PlainItem" representedClassName="PlainItem" syncable="YES" codeGenerationType="class">
         <attribute name="content" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
-        <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="List" inverseName="plainItems" inverseEntity="List"/>
+        <relationship name="listType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ListType" inverseName="plainItems" inverseEntity="ListType"/>
     </entity>
     <entity name="StepperItem" representedClassName="StepperItem" syncable="YES" codeGenerationType="class">
         <attribute name="amount" attributeType="Integer 32" minValueString="0" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="content" attributeType="String" defaultValueString=""/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
-        <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="List" inverseName="stepperItems" inverseEntity="List"/>
+        <relationship name="listType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ListType" inverseName="stepperItems" inverseEntity="ListType"/>
     </entity>
     <elements>
         <element name="CheckboxItem" positionX="-54" positionY="27" width="128" height="89"/>
-        <element name="List" positionX="-63" positionY="18" width="128" height="104"/>
+        <element name="ListType" positionX="-63" positionY="18" width="128" height="104"/>
         <element name="PlainItem" positionX="-36" positionY="36" width="128" height="74"/>
         <element name="StepperItem" positionX="-63" positionY="-9" width="128" height="89"/>
     </elements>
