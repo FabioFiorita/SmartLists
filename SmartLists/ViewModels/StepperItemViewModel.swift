@@ -16,13 +16,15 @@ final class StepperItemViewModel: ObservableObject {
         self.viewContext = viewContext
     }
     
-    func fetchItems(forList list: ListType) {
+    func fetchItems(forList list: ListType) -> [StepperItem] {
         let request = NSFetchRequest<StepperItem>(entityName: "StepperItem")
         request.predicate = NSPredicate(format: "listType = %@", list)
         do {
             items = try viewContext.fetch(request)
+            return items
         } catch {
             print("Error Fetching. \(error)")
+            return []
         }
     }
     

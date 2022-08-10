@@ -31,10 +31,10 @@ final class TestStepperItemViewModel: XCTestCase {
     }
     
     func testFetchItems() {
-        let items = stepperItemViewModel.items
+        var items = stepperItemViewModel.fetchItems(forList: listType)
         XCTAssertTrue(items.isEmpty)
         let newItem = stepperItemViewModel.addItem(content: "Test", listType: listType)
-        stepperItemViewModel.fetchItems(forList: listType)
+        items = stepperItemViewModel.fetchItems(forList: listType)
         XCTAssertFalse(items.isEmpty)
         XCTAssertTrue(items.first == newItem)
     }
@@ -45,7 +45,6 @@ final class TestStepperItemViewModel: XCTestCase {
         XCTAssertEqual("Test", newItem.content, "Item should have the same content")
         XCTAssertTrue(newItem.listType == listType, "Item should have the same list type")
         XCTAssertTrue(newItem.amount == 0, "Item should have amount == 0")
-        
     }
     
     func testIncreaseAmount() {
