@@ -8,37 +8,38 @@
 import SwiftUI
 
 struct StepperListView: View {
-    @StateObject var vm = StepperItemViewModel(viewContext: CoreDataStack.shared.container.viewContext)
+    @ObservedObject var stepperVM: StepperItemViewModel
     @State private var showingSheet = false
     @State private var content = ""
+    @State var list: ListType
     var body: some View {
         NavigationStack {
             ZStack {
                 List {
-                    ForEach(vm.items, id: \.self) { item in
+                    ForEach(stepperVM.items, id: \.self) { item in
                         HStack {
                             Text(item.content ?? "")
                                 .font(.title3)
                             Spacer()
                             Image(systemName: "minus.circle.fill")
                                 .font(.title3)
-                                .foregroundColor(.blue)
+                                .foregroundColor(.accentColor)
                                 .onTapGesture {
-                                    let _ = vm.decreaseAmount(item: item)
+                                    let _ = stepperVM.decreaseAmount(item: item)
                                 }
                             Text("\(item.amount)")
                                 .font(.title3)
                             Image(systemName: "plus.circle.fill")
                                 .font(.title3)
-                                .foregroundColor(.blue)
+                                .foregroundColor(.accentColor)
                                 .onTapGesture {
-                                    let _ = vm.increaseAmount(item: item)
+                                    let _ = stepperVM.increaseAmount(item: item)
                                 }
                             
                         }
                         .swipeActions {
                             Button(role: .destructive) {
-                                let _ = vm.deleteItem(item: item)
+                                let _ = stepperVM.deleteItem(item: item)
                             } label: {
                                 Text("Delete")
                             }
@@ -56,14 +57,14 @@ struct StepperListView: View {
                                 .font(.largeTitle)
                         }
                         .sheet(isPresented: $showingSheet) {
-                            vm.fetchItems()
+                            stepperVM.fetchItems(forList: list)
                         } content: {
                             NavigationStack {
                                 GroupBox {
                                     HStack {
                                         TextField("Apple, banana, orange...", text: $content)
                                         Button {
-                                            let _ = vm.addItem(content: content)
+                                            let _ = stepperVM.addItem(content: content, listType: list)
                                             showingSheet.toggle()
                                         } label: {
                                             Text("Save")
@@ -80,9 +81,9 @@ struct StepperListView: View {
                 }
                 .padding()
             }
-            .navigationTitle("List")
+            .navigationTitle(list.title ?? "List")
             .onAppear {
-                vm.fetchItems()
+                stepperVM.fetchItems(forList: list)
             }
         }
     }
@@ -90,6 +91,6 @@ struct StepperListView: View {
 
 struct StepperListView_Previews: PreviewProvider {
     static var previews: some View {
-        StepperListView()
+        StepperListView(stepperVM: StepperItemViewModel(viewContext: CoreDataStack.shared.container.viewContext), list: ListType())
     }
 }
