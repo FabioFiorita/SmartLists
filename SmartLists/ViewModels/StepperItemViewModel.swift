@@ -16,8 +16,9 @@ final class StepperItemViewModel: ObservableObject {
         self.viewContext = viewContext
     }
     
-    func fetchItems() {
+    func fetchItems(forList list: ListType) {
         let request = NSFetchRequest<StepperItem>(entityName: "StepperItem")
+        request.predicate = NSPredicate(format: "listType = %@", list)
         do {
             items = try viewContext.fetch(request)
         } catch {
@@ -28,17 +29,17 @@ final class StepperItemViewModel: ObservableObject {
     func saveData() {
         do {
             try viewContext.save()
-            fetchItems()
         } catch {
             print("Error saving. \(error)")
         }
     }
     
-    func addItem(content: String) -> StepperItem {
+    func addItem(content: String, listType: ListType) -> StepperItem {
         let newItem = StepperItem(context: viewContext)
         newItem.id = UUID()
         newItem.content = content
         newItem.amount = 0
+        newItem.listType = listType
         saveData()
         return newItem
     }
@@ -68,7 +69,9 @@ final class StepperItemViewModel: ObservableObject {
         saveData()
     }
     
-    func updateItem(item: StepperItem) -> StepperItem {
+    func updateItem(item: StepperItem, newContent: String) -> StepperItem {
+        item.content = newContent
+        saveData()
         return item
     }
 }
