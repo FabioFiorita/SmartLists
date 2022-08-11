@@ -11,8 +11,6 @@
 		C110D71E28A1CD840060778C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C110D71D28A1CD840060778C /* Assets.xcassets */; };
 		C110D72128A1CD840060778C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C110D72028A1CD840060778C /* Preview Assets.xcassets */; };
 		C110D72628A1CD840060778C /* SmartLists.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C110D72428A1CD840060778C /* SmartLists.xcdatamodeld */; };
-		C110D73B28A1CD840060778C /* SmartListsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D73A28A1CD840060778C /* SmartListsUITests.swift */; };
-		C110D73D28A1CD840060778C /* SmartListsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D73C28A1CD840060778C /* SmartListsUITestsLaunchTests.swift */; };
 		C110D74A28A1CE3B0060778C /* StepperListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D74928A1CE3B0060778C /* StepperListView.swift */; };
 		C110D75028A1D1730060778C /* StepperItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D74F28A1D1730060778C /* StepperItemViewModel.swift */; };
 		C110D75428A2BA580060778C /* TestCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D75328A2BA580060778C /* TestCoreDataStack.swift */; };
@@ -52,8 +50,6 @@
 		C110D72728A1CD840060778C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C110D72C28A1CD840060778C /* SmartListsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartListsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C110D73628A1CD840060778C /* SmartListsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartListsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C110D73A28A1CD840060778C /* SmartListsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartListsUITests.swift; sourceTree = "<group>"; };
-		C110D73C28A1CD840060778C /* SmartListsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartListsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C110D74928A1CE3B0060778C /* StepperListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperListView.swift; sourceTree = "<group>"; };
 		C110D74B28A1D08B0060778C /* SmartLists.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartLists.entitlements; sourceTree = "<group>"; };
 		C110D74F28A1D1730060778C /* StepperItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperItemViewModel.swift; sourceTree = "<group>"; };
@@ -151,8 +147,6 @@
 		C110D73928A1CD840060778C /* SmartListsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C110D73A28A1CD840060778C /* SmartListsUITests.swift */,
-				C110D73C28A1CD840060778C /* SmartListsUITestsLaunchTests.swift */,
 			);
 			path = SmartListsUITests;
 			sourceTree = "<group>";
@@ -177,7 +171,7 @@
 		C110D74E28A1D1530060778C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C1AA76AD28A41D8400CBC6AD /* ListsView */,
+				C1AA76A928A3EEF000CBC6AD /* ListsView.swift */,
 				C110D74928A1CE3B0060778C /* StepperListView.swift */,
 			);
 			path = Views;
@@ -189,14 +183,6 @@
 				C110D75628A2BD830060778C /* CoreDataStack.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		C1AA76AD28A41D8400CBC6AD /* ListsView */ = {
-			isa = PBXGroup;
-			children = (
-				C1AA76A928A3EEF000CBC6AD /* ListsView.swift */,
-			);
-			path = ListsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,8 +342,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C110D73D28A1CD840060778C /* SmartListsUITestsLaunchTests.swift in Sources */,
-				C110D73B28A1CD840060778C /* SmartListsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
