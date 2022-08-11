@@ -57,7 +57,7 @@ struct StepperListView: View {
                                 .font(.largeTitle)
                         }
                         .sheet(isPresented: $showingSheet) {
-                            stepperVM.fetchItems(forList: list)
+                            let _ = stepperVM.fetchItems(forList: list)
                         } content: {
                             NavigationStack {
                                 GroupBox {
@@ -83,7 +83,7 @@ struct StepperListView: View {
             }
             .navigationTitle(list.title ?? "List")
             .onAppear {
-                stepperVM.fetchItems(forList: list)
+                let _ = stepperVM.fetchItems(forList: list)
             }
         }
     }

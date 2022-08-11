@@ -34,7 +34,7 @@ struct ListsView: View {
             }
             .navigationTitle("SmartLists")
             .onAppear {
-                listVM.fetchLists()
+                let _ = listVM.fetchLists()
             }
             .toolbar {
                 ToolbarItem {
@@ -43,7 +43,7 @@ struct ListsView: View {
                     } label: {
                         Label("Add list", systemImage: "plus")
                     }.sheet(isPresented: $showingTitleSheet) {
-                        listVM.fetchLists()
+                        let _ = listVM.fetchLists()
                     } content: {
                         titleSheet
                     }
