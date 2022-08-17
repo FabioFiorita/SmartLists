@@ -67,6 +67,7 @@
 		C19FC50828AD94D3001D618A /* NewItemSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemSheet.swift; sourceTree = "<group>"; };
 		C19FC50B28AD988F001D618A /* ListCellComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellComponents.swift; sourceTree = "<group>"; };
 		C19FC50D28AD989D001D618A /* NewListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListModal.swift; sourceTree = "<group>"; };
+		C19FC51028ADB22A001D618A /* SmartListsUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartListsUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		C1AA76A728A3EE2E00CBC6AD /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C1AA76A928A3EEF000CBC6AD /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
 		C1AA76AB28A3F00F00CBC6AD /* ListTypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTypeViewModel.swift; sourceTree = "<group>"; };
@@ -158,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				C135373E28AAA8880008C9AE /* TestListView.swift */,
+				C19FC51028ADB22A001D618A /* SmartListsUITests-Bridging-Header.h */,
 			);
 			path = SmartListsUITests;
 			sourceTree = "<group>";
