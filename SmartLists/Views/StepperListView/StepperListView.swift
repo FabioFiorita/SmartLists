@@ -10,14 +10,13 @@ import SwiftUI
 struct StepperListView: View {
     @ObservedObject var stepperVM: StepperItemViewModel
     @State private var showingSheet = false
-    @State private var content = ""
     @State var list: ListType
     var body: some View {
         NavigationStack {
             List {
                 ForEach(stepperVM.items, id: \.self) { item in
                     if item.listType == list {
-                        CellComponents(stepperVM: stepperVM, item: item)
+                        StepperCellComponents(stepperVM: stepperVM, item: item)
                     }
                 }
             }
@@ -30,7 +29,7 @@ struct StepperListView: View {
                     Spacer()
                 }
                 ToolbarItem(placement: .bottomBar) {
-                    NewItemSheet(stepperVM: stepperVM, content: content, showingSheet: showingSheet, list: list)
+                    NewItemSheet(stepperVM: stepperVM, showingSheet: showingSheet, list: list)
                 }
             }
         }

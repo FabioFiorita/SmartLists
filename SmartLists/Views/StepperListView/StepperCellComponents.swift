@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CellComponents: View {
+struct StepperCellComponents: View {
     @ObservedObject var stepperVM: StepperItemViewModel
     @State var item: StepperItem
     
@@ -35,6 +35,7 @@ struct CellComponents: View {
         .swipeActions {
             Button(role: .destructive) {
                 let _ = stepperVM.deleteItem(item: item)
+                let _ = stepperVM.fetchItems()
             } label: {
                 Text("Delete")
             }

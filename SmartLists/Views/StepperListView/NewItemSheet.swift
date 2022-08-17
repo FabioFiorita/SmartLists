@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NewItemSheet: View {
     @ObservedObject var stepperVM: StepperItemViewModel
-    @State var content: String
+    @State private var content = ""
     @State var showingSheet: Bool
     @State var list: ListType
     
