@@ -30,6 +30,7 @@ final class ListTypeViewModel: ObservableObject {
     func saveData() {
         do {
             try viewContext.save()
+            let _ = fetchLists()
         } catch {
             print("Error saving. \(error)")
         }
