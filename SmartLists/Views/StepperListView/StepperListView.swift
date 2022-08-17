@@ -11,6 +11,7 @@ struct StepperListView: View {
     @ObservedObject var stepperVM: StepperItemViewModel
     @State private var showingSheet = false
     @State var list: ListType
+    
     var body: some View {
         NavigationStack {
             List {

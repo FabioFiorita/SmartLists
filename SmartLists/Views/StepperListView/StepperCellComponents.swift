@@ -35,7 +35,6 @@ struct StepperCellComponents: View {
         .swipeActions {
             Button(role: .destructive) {
                 let _ = stepperVM.deleteItem(item: item)
-                let _ = stepperVM.fetchItems()
             } label: {
                 Text("Delete")
             }

@@ -10,9 +10,9 @@
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
-        <relationship name="checkboxItems" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CheckboxItem" inverseName="listType" inverseEntity="CheckboxItem"/>
-        <relationship name="plainItems" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="PlainItem" inverseName="listType" inverseEntity="PlainItem"/>
-        <relationship name="stepperItems" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="StepperItem" inverseName="listType" inverseEntity="StepperItem"/>
+        <relationship name="checkboxItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CheckboxItem" inverseName="listType" inverseEntity="CheckboxItem"/>
+        <relationship name="plainItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PlainItem" inverseName="listType" inverseEntity="PlainItem"/>
+        <relationship name="stepperItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="StepperItem" inverseName="listType" inverseEntity="StepperItem"/>
     </entity>
     <entity name="PlainItem" representedClassName="PlainItem" syncable="YES" codeGenerationType="class">
         <attribute name="content" optional="YES" attributeType="String"/>
