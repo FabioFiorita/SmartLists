@@ -31,10 +31,10 @@ final class TestStepperItemViewModel: XCTestCase {
     }
     
     func testFetchItems() {
-        var items = stepperItemViewModel.fetchItems(forList: listType)
+        var items = stepperItemViewModel.fetchItems()
         XCTAssertTrue(items.isEmpty)
         let newItem = stepperItemViewModel.addItem(content: "Test", listType: listType)
-        items = stepperItemViewModel.fetchItems(forList: listType)
+        items = stepperItemViewModel.fetchItems()
         XCTAssertFalse(items.isEmpty)
         XCTAssertTrue(items.first == newItem)
     }
