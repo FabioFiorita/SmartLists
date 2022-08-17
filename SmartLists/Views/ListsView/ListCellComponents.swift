@@ -14,16 +14,7 @@ struct ListCellComponents: View {
     @State private var newFunc = false
     var body: some View {
         NavigationLink {
-            if newFunc {
-                switch list.type {
-                case "Stepper List":
-                    StepperListView(stepperVM: stepperVM, list: list)
-                default:
-                    EmptyView()
-                }
-            } else {
-                StepperListView(stepperVM: stepperVM, list: list)
-            }
+            StepperListView(stepperVM: stepperVM, list: list)
         } label: {
             Text(list.title ?? "list")
         }

@@ -52,6 +52,9 @@ struct NewListModal: View {
                     }
                 }
                 .navigationTitle("New list")
+                .onAppear {
+                    title = ""
+                }
                 .toolbar {
                     ToolbarItem(placement: .bottomBar) {
                         Button {

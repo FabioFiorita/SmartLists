@@ -21,6 +21,9 @@ struct NewItemSheet: View {
                 .labelStyle(.titleAndIcon)
         }
         .buttonStyle(.borderedProminent)
+        .onAppear {
+            content = ""
+        }
         .sheet(isPresented: $showingSheet) {
             let _ = stepperVM.fetchItems()
         } content: {
