@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21223.11" systemVersion="22A5311f" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21223.11" systemVersion="22A5321d" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
     <entity name="CheckboxItem" representedClassName="CheckboxItem" syncable="YES" codeGenerationType="class">
         <attribute name="content" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
@@ -10,9 +10,9 @@
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
-        <relationship name="checkboxItems" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CheckboxItem" inverseName="listType" inverseEntity="CheckboxItem"/>
-        <relationship name="plainItems" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlainItem" inverseName="listType" inverseEntity="PlainItem"/>
-        <relationship name="stepperItems" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StepperItem" inverseName="listType" inverseEntity="StepperItem"/>
+        <relationship name="checkboxItems" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CheckboxItem" inverseName="listType" inverseEntity="CheckboxItem"/>
+        <relationship name="plainItems" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="PlainItem" inverseName="listType" inverseEntity="PlainItem"/>
+        <relationship name="stepperItems" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="StepperItem" inverseName="listType" inverseEntity="StepperItem"/>
     </entity>
     <entity name="PlainItem" representedClassName="PlainItem" syncable="YES" codeGenerationType="class">
         <attribute name="content" optional="YES" attributeType="String"/>
