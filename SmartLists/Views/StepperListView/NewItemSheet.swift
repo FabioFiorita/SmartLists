@@ -21,9 +21,6 @@ struct NewItemSheet: View {
                 .labelStyle(.titleAndIcon)
         }
         .buttonStyle(.borderedProminent)
-        .onAppear {
-            content = ""
-        }
         .sheet(isPresented: $showingSheet) {
             let _ = stepperVM.fetchItems()
         } content: {
@@ -33,6 +30,7 @@ struct NewItemSheet: View {
                         TextField("Apple, banana, orange...", text: $content)
                         Button {
                             let _ = stepperVM.addItem(content: content, listType: list)
+                            content = ""
                             showingSheet.toggle()
                         } label: {
                             Text("Save")

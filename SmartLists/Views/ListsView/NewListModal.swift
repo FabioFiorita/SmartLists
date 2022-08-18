@@ -52,13 +52,11 @@ struct NewListModal: View {
                     }
                 }
                 .navigationTitle("New list")
-                .onAppear {
-                    title = ""
-                }
                 .toolbar {
                     ToolbarItem(placement: .bottomBar) {
                         Button {
                             let _ = listVM.addList(title: title, type: listTypes[selectedType].name)
+                            title = ""
                             showingModal.toggle()
                         } label: {
                             Text("Save")
