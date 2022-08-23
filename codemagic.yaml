@@ -23,3 +23,6 @@ workflows:
       email:
         recipients:
           - fabiolfp@gmail.com
+      slack:
+        channel: '#codemagic'
+        notify_on_build_start: true
