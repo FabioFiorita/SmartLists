@@ -3,6 +3,14 @@ workflows:
     name: SmartLists Workflow
     environment:
       xcode: 14.0
+    triggering:
+      events:
+        - push
+      branch_patterns: 
+        - pattern: *
+        - pattern: develop
+          include: false
+      cancel_previous_builds: true
     scripts:
         - name: Build SmartLists
           script: xcodebuild build -project "SmartLists.xcodeproj" -scheme "SmartLists" CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
