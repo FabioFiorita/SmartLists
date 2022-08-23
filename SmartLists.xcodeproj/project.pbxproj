@@ -17,7 +17,6 @@
 		C110D75728A2BD830060778C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D75628A2BD830060778C /* CoreDataStack.swift */; };
 		C110D75828A2BE740060778C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D75628A2BD830060778C /* CoreDataStack.swift */; };
 		C110D75C28A2ED5E0060778C /* TestStepperItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110D75B28A2ED5E0060778C /* TestStepperItemViewModel.swift */; };
-		C135373F28AAA8880008C9AE /* TestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135373E28AAA8880008C9AE /* TestListView.swift */; };
 		C136A12628A4608000FDF3FA /* TestListTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136A12528A4608000FDF3FA /* TestListTypeViewModel.swift */; };
 		C19FC50728AD9413001D618A /* StepperCellComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19FC50628AD9413001D618A /* StepperCellComponents.swift */; };
 		C19FC50928AD94D3001D618A /* NewItemSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19FC50828AD94D3001D618A /* NewItemSheet.swift */; };
@@ -37,13 +36,6 @@
 			remoteGlobalIDString = C110D71528A1CD830060778C;
 			remoteInfo = SmartLists;
 		};
-		C110D73728A1CD840060778C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C110D70E28A1CD830060778C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C110D71528A1CD830060778C;
-			remoteInfo = SmartLists;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -54,20 +46,17 @@
 		C110D72528A1CD840060778C /* SmartLists.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartLists.xcdatamodel; sourceTree = "<group>"; };
 		C110D72728A1CD840060778C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C110D72C28A1CD840060778C /* SmartListsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartListsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C110D73628A1CD840060778C /* SmartListsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartListsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C110D74928A1CE3B0060778C /* StepperListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperListView.swift; sourceTree = "<group>"; };
 		C110D74B28A1D08B0060778C /* SmartLists.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartLists.entitlements; sourceTree = "<group>"; };
 		C110D74F28A1D1730060778C /* StepperItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperItemViewModel.swift; sourceTree = "<group>"; };
 		C110D75328A2BA580060778C /* TestCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreDataStack.swift; sourceTree = "<group>"; };
 		C110D75628A2BD830060778C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		C110D75B28A2ED5E0060778C /* TestStepperItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStepperItemViewModel.swift; sourceTree = "<group>"; };
-		C135373E28AAA8880008C9AE /* TestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListView.swift; sourceTree = "<group>"; };
 		C136A12528A4608000FDF3FA /* TestListTypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListTypeViewModel.swift; sourceTree = "<group>"; };
 		C19FC50628AD9413001D618A /* StepperCellComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperCellComponents.swift; sourceTree = "<group>"; };
 		C19FC50828AD94D3001D618A /* NewItemSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemSheet.swift; sourceTree = "<group>"; };
 		C19FC50B28AD988F001D618A /* ListCellComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellComponents.swift; sourceTree = "<group>"; };
 		C19FC50D28AD989D001D618A /* NewListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListModal.swift; sourceTree = "<group>"; };
-		C19FC51028ADB22A001D618A /* SmartListsUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartListsUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		C1AA76A728A3EE2E00CBC6AD /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C1AA76A928A3EEF000CBC6AD /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
 		C1AA76AB28A3F00F00CBC6AD /* ListTypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTypeViewModel.swift; sourceTree = "<group>"; };
@@ -89,13 +78,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C110D73328A1CD840060778C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,7 +86,6 @@
 			children = (
 				C110D71828A1CD830060778C /* SmartLists */,
 				C110D72F28A1CD840060778C /* SmartListsTests */,
-				C110D73928A1CD840060778C /* SmartListsUITests */,
 				C110D71728A1CD830060778C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,7 +95,6 @@
 			children = (
 				C110D71628A1CD830060778C /* SmartLists.app */,
 				C110D72C28A1CD840060778C /* SmartListsTests.xctest */,
-				C110D73628A1CD840060778C /* SmartListsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,15 +133,6 @@
 				C136A12528A4608000FDF3FA /* TestListTypeViewModel.swift */,
 			);
 			path = SmartListsTests;
-			sourceTree = "<group>";
-		};
-		C110D73928A1CD840060778C /* SmartListsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C135373E28AAA8880008C9AE /* TestListView.swift */,
-				C19FC51028ADB22A001D618A /* SmartListsUITests-Bridging-Header.h */,
-			);
-			path = SmartListsUITests;
 			sourceTree = "<group>";
 		};
 		C110D74C28A1D1410060778C /* ViewModels */ = {
@@ -256,24 +227,6 @@
 			productReference = C110D72C28A1CD840060778C /* SmartListsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C110D73528A1CD840060778C /* SmartListsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C110D74628A1CD840060778C /* Build configuration list for PBXNativeTarget "SmartListsUITests" */;
-			buildPhases = (
-				C110D73228A1CD840060778C /* Sources */,
-				C110D73328A1CD840060778C /* Frameworks */,
-				C110D73428A1CD840060778C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C110D73828A1CD840060778C /* PBXTargetDependency */,
-			);
-			name = SmartListsUITests;
-			productName = SmartListsUITests;
-			productReference = C110D73628A1CD840060778C /* SmartListsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -289,11 +242,6 @@
 					};
 					C110D72B28A1CD840060778C = {
 						CreatedOnToolsVersion = 14.0;
-						TestTargetID = C110D71528A1CD830060778C;
-					};
-					C110D73528A1CD840060778C = {
-						CreatedOnToolsVersion = 14.0;
-						LastSwiftMigration = 1400;
 						TestTargetID = C110D71528A1CD830060778C;
 					};
 				};
@@ -313,7 +261,6 @@
 			targets = (
 				C110D71528A1CD830060778C /* SmartLists */,
 				C110D72B28A1CD840060778C /* SmartListsTests */,
-				C110D73528A1CD840060778C /* SmartListsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -330,13 +277,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C110D72A28A1CD840060778C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C110D73428A1CD840060778C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -376,14 +316,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C110D73228A1CD840060778C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C135373F28AAA8880008C9AE /* TestListView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -391,11 +323,6 @@
 			isa = PBXTargetDependency;
 			target = C110D71528A1CD830060778C /* SmartLists */;
 			targetProxy = C110D72D28A1CD840060778C /* PBXContainerItemProxy */;
-		};
-		C110D73828A1CD840060778C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C110D71528A1CD830060778C /* SmartLists */;
-			targetProxy = C110D73728A1CD840060778C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -620,57 +547,6 @@
 			};
 			name = Release;
 		};
-		C110D74728A1CD840060778C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9QH8M89WF9;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabiofiorita.SmartListsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "SmartListsUITests/SmartListsUITests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SmartLists;
-			};
-			name = Debug;
-		};
-		C110D74828A1CD840060778C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9QH8M89WF9;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fabiofiorita.SmartListsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "SmartListsUITests/SmartListsUITests-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SmartLists;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -697,15 +573,6 @@
 			buildConfigurations = (
 				C110D74428A1CD840060778C /* Debug */,
 				C110D74528A1CD840060778C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C110D74628A1CD840060778C /* Build configuration list for PBXNativeTarget "SmartListsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C110D74728A1CD840060778C /* Debug */,
-				C110D74828A1CD840060778C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
