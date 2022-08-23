@@ -39,7 +39,7 @@ struct NewItemSheet: View {
                     }
                 }
                 .padding()
-                .navigationTitle("Add new item")
+                .navigationTitle("New item")
             }
             .presentationDetents([.fraction(0.3)])
         }

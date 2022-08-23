@@ -9,9 +9,9 @@ import SwiftUI
 
 struct NewListModal: View {
     @State private var listTypes: [ListTypeModel] = [
-        .init(name: "Stepper List", image: "plusminus.circle.fill"),
-        .init(name: "Checkbox List", image: "checkmark.circle.fill"),
-        .init(name: "Plain List", image: "line.3.horizontal.circle.fill")
+        .init(name: "Stepper", image: "plusminus.circle.fill"),
+        .init(name: "Checkbox", image: "checkmark.circle.fill"),
+        .init(name: "Plain", image: "line.3.horizontal.circle.fill")
     ]
     @State private var selectedType = 0
     @State private var title = ""
@@ -41,11 +41,11 @@ struct NewListModal: View {
                         }
                         switch selectedType {
                         case 0:
-                            Text("Stepper list is a list that contains buttons to increase and decrease a value")
+                            Text("Stepper is a list that contains buttons to increase and decrease a value")
                         case 1:
-                            Text("Checkbox list is a list that contains a checkbox")
+                            Text("Checkbox is a list that contains a checkbox")
                         case 2:
-                            Text("Plain list is a list that is plain")
+                            Text("Plain is a list that is plain")
                         default:
                             Text("")
                         }
