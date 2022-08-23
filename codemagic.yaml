@@ -12,7 +12,7 @@ workflows:
                 --project SmartLists.xcodeproj \
                 --scheme SmartLists \
                 --device "iPhone 12"
-                --test-only=/SmartLists/SmartListsTests
+                --target=SmartListsTest
     publishing:
       email:
         recipients:
