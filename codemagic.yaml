@@ -2,7 +2,7 @@ workflows:
   smartlists-workflow:
     name: SmartLists Workflow
     environment:
-      xcode: 14.0.0
+      xcode: 14.0
     scripts:
         - name: Build SmartLists
           script: xcodebuild build -project "SmartLists.xcodeproj" -scheme "SmartLists" CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
