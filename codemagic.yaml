@@ -4,3 +4,13 @@ workflows:
     scripts:
         - name: Build SmartLists
           script: xcodebuild build -project "SmartLists.xcodeproj" -scheme "SmartLists" CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+        - name: iOS test
+          script: |
+            xcode-project run-tests \
+                --project SmartLists.xcodeproj \
+                --scheme SmartLists \
+                --device "iPhone 12"
+    publishing:
+      email:
+        recipients:
+          - fabiolfp@gmail.com
