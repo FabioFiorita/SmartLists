@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "6827947C-8377-4D94-85AC-E4C2BB041636",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:SmartLists.xcodeproj",
+        "identifier" : "C110D72B28A1CD840060778C",
+        "name" : "SmartListsTests"
+      }
+    }
+  ],
+  "version" : 1
+}
