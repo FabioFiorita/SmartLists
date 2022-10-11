@@ -24,7 +24,7 @@
   1. Na barra de opções do Xcode selecione "SmartLists" e vá para General > Identity. Adicione uma palavra no final do *Bundle Identifier* e.g. com.FabioFiorita.SmartLists*.name* para que se torne único. Selecione seu Apple ID em Signing > Team;
   1. Conecte seu iPad ou iPhone usando um cabo USB e o selecione em Xcode's Product menu > Destination;
   1. Aperte CMD+R ou Product > Run para instalar;
-  1. Se você instalar usando uma conta grátis (não-desenvolvedor), certifique-se de executar o programa a cada 7 dias, ou ele fechará assim que abrir qunado sua certificação expirar.
+  1. Se você instalar usando uma conta grátis (não-desenvolvedor), certifique-se de executar o programa a cada 7 dias, ou ele fechará assim que abrir quando sua certificação expirar.
  
  ## 🌡️ Instruções para rodar os testes
   1. Na barra de opções do Xcode selecione a aba Test Navigator
