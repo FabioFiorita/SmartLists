@@ -52,8 +52,7 @@
 		C110D75328A2BA580060778C /* TestCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreDataStack.swift; sourceTree = "<group>"; };
 		C110D75628A2BD830060778C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		C110D75B28A2ED5E0060778C /* TestStepperItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStepperItemViewModel.swift; sourceTree = "<group>"; };
-		C12D59DA28E298C400B93244 /* SmartLists-develop.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "SmartLists-develop.xctestplan"; path = "SmartLists.xcodeproj/SmartLists-develop.xctestplan"; sourceTree = "<group>"; };
-		C12D59DB28E2990400B93244 /* SmartLists-master.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SmartLists-master.xctestplan"; sourceTree = "<group>"; };
+		C12D59DA28E298C400B93244 /* SmartLists-develop.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "SmartLists-develop.xctestplan"; sourceTree = "<group>"; };
 		C136A12528A4608000FDF3FA /* TestListTypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListTypeViewModel.swift; sourceTree = "<group>"; };
 		C19FC50628AD9413001D618A /* StepperCellComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperCellComponents.swift; sourceTree = "<group>"; };
 		C19FC50828AD94D3001D618A /* NewItemSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemSheet.swift; sourceTree = "<group>"; };
@@ -86,8 +85,7 @@
 		C110D70D28A1CD830060778C = {
 			isa = PBXGroup;
 			children = (
-				C12D59DA28E298C400B93244 /* SmartLists-develop.xctestplan */,
-				C12D59DB28E2990400B93244 /* SmartLists-master.xctestplan */,
+				C13A2EA928F4FD970038C861 /* TestPlans */,
 				C110D71828A1CD830060778C /* SmartLists */,
 				C110D72F28A1CD840060778C /* SmartListsTests */,
 				C110D71728A1CD830060778C /* Products */,
@@ -171,6 +169,14 @@
 				C110D75628A2BD830060778C /* CoreDataStack.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C13A2EA928F4FD970038C861 /* TestPlans */ = {
+			isa = PBXGroup;
+			children = (
+				C12D59DA28E298C400B93244 /* SmartLists-develop.xctestplan */,
+			);
+			path = TestPlans;
 			sourceTree = "<group>";
 		};
 		C19FC50328AD93C7001D618A /* StepperListView */ = {
