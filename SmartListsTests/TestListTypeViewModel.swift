@@ -42,11 +42,10 @@ final class TestListTypeViewModel: XCTestCase {
         XCTAssertTrue(newList.type == "Stepper List", "List should have the same list type")
     }
 
-    func testAddNilList() {
-        let newList = listTypeViewModel.addList(title: nil, type: nil)
-        XCTAssertNotNil(newList, "List should not be nil")
-        XCTAssertEqual(nil, newList.title, "List title should be nil")
-        XCTAssertTrue(newList.type == nil, "List type should be nil")
+    func testAddEmptyList() {
+        let newList = listTypeViewModel.addList(title: "", type: "")
+        XCTAssertEqual("", newList.title, "List title should be empty")
+        XCTAssertTrue(newList.type == "", "List type should be empty")
     }
     
     func testDeleteList() {
