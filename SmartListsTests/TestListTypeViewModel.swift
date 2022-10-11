@@ -28,11 +28,11 @@ final class TestListTypeViewModel: XCTestCase {
     
     func testFetchLists() {
         var lists = listTypeViewModel.fetchLists()
-        XCTAssertTrue(lists.isEmpty)
+        XCTAssertTrue(lists.isEmpty, "list should start empty")
         let newList = listTypeViewModel.addList(title: "Title", type: "Stepper List")
         lists = listTypeViewModel.fetchLists()
-        XCTAssertFalse(lists.isEmpty)
-        XCTAssertTrue(lists.first == newList)
+        XCTAssertFalse(lists.isEmpty, "list shouldn't be empty")
+        XCTAssertTrue(lists.first == newList, "first item of the list should be the new list created")
     }
     
     func testAddList() {
@@ -40,6 +40,23 @@ final class TestListTypeViewModel: XCTestCase {
         XCTAssertNotNil(newList, "List should not be nil")
         XCTAssertEqual("Title", newList.title, "List should have the same title")
         XCTAssertTrue(newList.type == "Stepper List", "List should have the same list type")
+    }
+    
+    func testDeleteList() {
+        let newList = listTypeViewModel.addList(title: "Title", type: "Stepper List")
+        var lists = listTypeViewModel.fetchLists()
+        listTypeViewModel.deleteList(list: newList)
+        lists = listTypeViewModel.fetchLists()
+        XCTAssertTrue(lists.isEmpty, "list should be empty after deletion")
+    }
+    
+    func testUpdateList() {
+        let newList = listTypeViewModel.addList(title: "Title", type: "Stepper List")
+        let title = "Title2"
+        let type = "Checkbox List"
+        let updatedList = listTypeViewModel.updateList(title: title, type: type, list: newList)
+        XCTAssertEqual(title, updatedList.title, "List should have the same title")
+        XCTAssertTrue(updatedList.type == type, "List should have the same list type")
     }
 
 }
