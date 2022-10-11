@@ -45,6 +45,7 @@ final class TestListTypeViewModel: XCTestCase {
     func testDeleteList() {
         let newList = listTypeViewModel.addList(title: "Title", type: "Stepper List")
         var lists = listTypeViewModel.fetchLists()
+        XCTAssertFalse(lists.isEmpty, "list shouldn't be empty")
         listTypeViewModel.deleteList(list: newList)
         lists = listTypeViewModel.fetchLists()
         XCTAssertTrue(lists.isEmpty, "list should be empty after deletion")
