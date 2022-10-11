@@ -50,7 +50,10 @@ final class ListTypeViewModel: ObservableObject {
         saveData()
     }
     
-    func updateList(list: ListType) -> ListType {
+    func updateList(title: String, type: String, list: ListType) -> ListType {
+        list.title = title
+        list.type = type
+        saveData()
         return list
     }
 }
